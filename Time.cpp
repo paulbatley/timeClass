@@ -27,4 +27,8 @@ Time Time::operator*(double n) const
 	return result;
 }
 
-
+std::ostream & operator<<(std::ostream & os, const Time t)
+{
+	os << t.hours << " hours, " << t.mins<< " mins";
+	return os;
+}
