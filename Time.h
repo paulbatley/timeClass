@@ -16,6 +16,8 @@ class Time
 		{std::cout << hours << " hours, " << mins<< " mins";}
 		
 		Time sum(const Time & t) const;
+		
+		Time operator+(const Time & t) const;
 };
 
 
