@@ -26,7 +26,19 @@ int main()
 	total = coding.sum(fixing);
 	total.show();
 	cout << endl;
+
+	cout << endl;
+	cout << "This is addition with the '+' operator: " << endl;
+	total = coding + fixing;
+	total.show();
+	cout << endl;
 	
+	cout << endl;
+	cout << "Coding * 2: " << endl;
+	total = coding*2;
+	total.show();
+
+
 	system("pause");
 	return 0;
 }
