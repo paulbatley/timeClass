@@ -18,8 +18,11 @@ class Time
 		Time sum(const Time & t) const;
 		
 		Time operator+(const Time & t) const;
-
 		Time operator*(double n) const;
+		friend Time operator*(double n, const Time t)
+		{return t*n;}
+		
+		friend std::ostream & operator<<(std::ostream & os, const Time t);
 };
 
 
